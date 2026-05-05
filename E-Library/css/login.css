@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-box {
+  background-color: #ffffff;
+ 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-value {
+  text-align: center;
+}
+
+.form-value h2 {
+  color: #333333;
+
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cccccc;
+
+  background: transparent;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+  top: -18px;
+  font-size: 12px;
+  color: #333333;
+
+}
+
+.inputbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #888888;
+
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+ 
+  border: none;
+  padding: 15px 20px;
+  color: #ffffff;
+ 
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+
+}
+
+.daftar {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.daftar a {
+  color: #007bff;
+
+  text-decoration: none;
+}
+
+.daftar a:hover {
+  text-decoration: underline;
+}

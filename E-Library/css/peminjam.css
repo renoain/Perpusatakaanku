@@ -1,0 +1,50 @@
+  /* CSS untuk tabel peminjam */
+  .table-peminjam {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  /* CSS untuk header kolom */
+  .table-peminjam th {
+      background-color: #87CEFA;
+      /* Warna latar belakang header */
+      color: #fff;
+      /* Warna teks header */
+      padding: 8px;
+      text-align: left;
+  }
+
+  /* CSS untuk baris */
+  .table-peminjam td {
+      padding: 8px;
+      border: 1px solid #ccc;
+  }
+
+  /* CSS untuk baris genap */
+  .table-peminjam tbody tr:nth-child(even) {
+      background-color: #f0f8ff;
+      /* Warna latar belakang baris genap */
+  }
+
+  /* CSS untuk tombol */
+  .table-peminjam .btn {
+      padding: 6px 12px;
+      border: none;
+      background-color: #007bff;
+      /* Warna latar belakang tombol */
+      color: #fff;
+      /* Warna teks tombol */
+      cursor: pointer;
+  }
+
+  /* CSS untuk tombol warna merah */
+  .table-peminjam .btn-danger {
+      background-color: #dc3545;
+      /* Warna latar belakang tombol merah */
+  }
+
+  /* CSS untuk tombol warna biru */
+  .table-peminjam .btn-primary {
+      background-color: #007bff;
+      /* Warna latar belakang tombol biru */
+  }

@@ -1,0 +1,161 @@
+/* css/custom.css - tambahan styling ringan untuk tata buku */
+.course-item img {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#booksGrid .course-item {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#booksGrid .course-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(13,110,253,0.08);
+}
+
+/* wishlist cards */
+#wishlistContainer .course-item {
+  transition: transform .2s ease;
+}
+
+/* make modal QR center */
+#modalQRCode { margin-top: 12px; }
+
+/* small responsive tweaks */
+@media (max-width: 768px) {
+  .display-3 { font-size: 2rem; }
+  .course-item img { height: 180px !important; }
+}
+
+/* === Standardisasi ukuran font di seluruh halaman === */
+
+/* Heading utama di hero section */
+/* === Samakan ukuran dan warna teks utama di semua halaman === */
+.page-header h1,
+.section-title,
+.display-3 {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  color: #ffffff !important; /* warna putih */
+}
+
+/* === Biar deskripsi di bawah judul juga putih === */
+.page-header p,
+.section-subtitle,
+.lead {
+  text-align: center !important;
+  color: #ffffff !important; /* warna putih */
+}
+
+
+
+/* Subjudul di bawah judul utama */
+.page-header p,
+.section-subtitle,
+.lead {
+  font-size: 1.1rem !important;
+  color: #ffffff !important;
+  text-align: center !important;
+}
+
+/* Font body umum */
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  font-family: 'Heebo', sans-serif;
+}
+
+/* Heading di dalam card atau panel */
+.card h4, .card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Penyesuaian responsif */
+@media (max-width: 768px) {
+  .page-header h1, .display-3 {
+    font-size: 2rem !important;
+  }
+  .page-header p {
+    font-size: 1rem !important;
+  }
+}
+
+/* ==== Koleksi Buku ==== */
+#books .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+#books .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* === Tambahan baru untuk deskripsi buku === */
+.book-desc {
+  max-height: 3.8em;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.book-desc.expanded {
+  max-height: 200px;
+}
+
+/* === Background Gambar untuk Semua Halaman Kecuali Home === */
+.page-header {
+  background-image: url("img/All Page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+/* === Background Gambar untuk Semua Halaman Kecuali Home === */
+.page-header {
+  background-image: url("../img/All Page.png"); /* pastikan path dan nama file sesuai */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+}
+
+/* Tambahkan overlay supaya teks tetap terbaca */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+/* Biar teksnya tetap di atas overlay */
+.page-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Khusus halaman Home tetap pakai warna biru */
+body.index .page-header,
+body.home .page-header {
+  background: #0d6efd !important;
+  background-image: none !important;
+}
